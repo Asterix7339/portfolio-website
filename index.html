@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohamed Satham - Full Stack Developer Portfolio" />
+  <title>Mohamed Satham | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header>
+    <nav id="navbar">
+
+      <div class="nav-logo">
+        <a href="#hero">Mohamed Satham</a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="dark-mode-toggle" aria-label="Toggle dark mode">Dark Mode</button>
+      <button class="hamburger-menu" aria-label="Open navigation menu">Menu</button>
+
+    </nav>
+  </header>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <!--
+      Two-column layout:
+      Left  → text content (name, title, intro, buttons)
+      Right → profile photo
+    -->
+    <section id="hero">
+      <div class="hero-inner">
+
+        <!-- LEFT: Text -->
+        <div class="hero-content">
+          <h1>Mohamed Satham</h1>
+          <h2>Full Stack Developer</h2>
+          <p>
+            I am a Software Engineering graduate passionate about building
+            web applications and AI-powered solutions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects">View Projects</a>
+            <a href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Profile Photo -->
+        <!--
+          HOW TO ADD YOUR PHOTO:
+          1. Place your photo in the assets/ folder
+          2. Name it: profile.jpg  (or .png)
+          3. Replace the src below with: src="assets/profile.jpg"
+          The placeholder div will disappear once a real image is used.
+        -->
+        <div class="hero-photo-wrapper">
+          <div class="hero-photo-placeholder">
+            <img
+              src="assets/profile.jpg"
+              alt="Mohamed Satham — Full Stack Developer"
+              class="hero-photo"
+              onerror="this.style.display='none'; this.parentElement.classList.add('no-photo')"
+            />
+            <span class="photo-fallback-text">Your Photo Here</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-content">
+
+          <div class="about-text">
+            <p>Short biography goes here.</p>
+            <p>Career goal goes here.</p>
+          </div>
+
+          <div class="about-education">
+            <p>Higher National Diploma (HND) — Completed</p>
+            <p>Software Engineering Degree — Currently Studying</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <!--
+      TO ADD A NEW SKILL CATEGORY:
+      Copy one .skill-group block and paste it inside .skills-content.
+      The grid will automatically adjust.
+
+      TO ADD A NEW SKILL ITEM:
+      Add a new <li> inside any .skill-group ul.
+    -->
+    <section id="skills">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills-content">
+
+          <div class="skill-group">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>Skill placeholder</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>Skill placeholder</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Skill placeholder</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <!--
+      TO ADD A NEW PROJECT:
+      Copy one <article class="project-card"> block and paste it
+      inside .projects-grid. The grid handles layout automatically.
+    -->
+    <section id="projects">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <h3>Project Title</h3>
+            <p>Short project description goes here.</p>
+            <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/Asterix7339" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Title</h3>
+            <p>Short project description goes here.</p>
+            <p class="project-tech">Technologies: Placeholder</p>
+            <a href="https://github.com/Asterix7339" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Title</h3>
+            <p>Short project description goes here.</p>
+            <p class="project-tech">Technologies: Placeholder</p>
+            <a href="https://github.com/Asterix7339" target="_blank" rel="noopener noreferrer">
+              View on GitHub
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Education</h2>
+        </div>
+
+        <div class="education-content">
+
+          <article class="education-card">
+            <h3>Higher National Diploma (HND)</h3>
+            <p>Institution name goes here</p>
+            <p>Status: <span>Completed</span></p>
+          </article>
+
+          <article class="education-card">
+            <h3>Software Engineering Degree</h3>
+            <p>Institution name goes here</p>
+            <p>Status: <span>Currently Studying</span></p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact">
+      <div class="section-inner">
+
+        <div class="section-header">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact-content">
+
+          <div class="contact-item">
+            <p>Phone: <a href="tel:+94775008136">+94 775 008 136</a></p>
+          </div>
+
+          <div class="contact-item">
+            <p>Email: Coming soon</p>
+          </div>
+
+          <div class="contact-item">
+            <p>
+              GitHub:
+              <a href="https://github.com/Asterix7339" target="_blank" rel="noopener noreferrer">
+                github.com/Asterix7339
+              </a>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <p>LinkedIn: Coming soon</p>
+          </div>
+
+          <div class="contact-item contact-resume">
+            <a href="#" aria-disabled="true">Download Resume (Coming Soon)</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <p>&copy; 2025 Mohamed Satham. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
